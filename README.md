@@ -15,23 +15,24 @@ springBoot {
 And just pasting it for subproject that I want to make executable at the time. This is not acceptable for long-term use.
 
 ## Reproduce issue
-- Clone repository and cd into
-```bash
-git clone https://github.com/dagi12/spring-boot-gradle-plugin-issue.git && cd spring-boot-gradle-plugin-issue 
-``` 
-
 1. 
+    Clone repository and cd into
+    ```bash
+    git clone https://github.com/dagi12/spring-boot-gradle-plugin-issue.git && cd spring-boot-gradle-plugin-issue 
+    ``` 
+
+2. 
     Run bootRun on mixed project. Everything works perfect.
     ```bash
     ./gradlew mixed:bootRun
     ``` 
 
-2.
+3.
     Switch plguin version to 2.0.1
     ```bash
     git checkout origin 2.0.1
     ```
-3.
+4.
     Try to run again, build will fail because 2.0.1 is not building jar dependencies 
     
     ```bash
