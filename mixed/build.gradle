@@ -1,0 +1,11 @@
+apply plugin: 'org.springframework.boot'
+
+springBoot {
+    mainClass = "com.example.springbootgradlepluginissue.App"
+//    mainClassName = "com.example.springbootgradlepluginissue.App"
+}
+
+dependencies {
+    compile project(":foo")
+    compile project(":bar")
+}

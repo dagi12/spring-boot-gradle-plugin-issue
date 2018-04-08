@@ -1,0 +1,5 @@
+rootProject.name = 'spring-boot-gradle-plugin-issue'
+include 'common'
+include 'foo'
+include 'bar'
+include 'mixed'
